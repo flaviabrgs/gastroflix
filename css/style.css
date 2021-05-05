@@ -1,0 +1,126 @@
+:root{
+    --vermelho:#E50914;
+    --preta:#141414;
+}
+
+body{
+    background: var(--preta);
+    font-family: 'Arial', Times, serif;
+    font-size: 16px;
+    color:white;
+ }
+
+
+main .filme-banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)100%), url('../img/cover-chefs.jpg');
+    height:480px;
+    background-size:cover;    
+}
+
+
+main .filme-banner .description{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+
+main .filme-banner .title{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.button{
+    background-color: rgba(0,0,0,.50);
+    border:none;
+    color: white;
+
+    padding:15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.button:hover{
+    background-color:white;
+    color:black;
+}
+
+.button i{
+    margin-right: 8px;
+}
+
+main .container{
+    margin-left: 20px;
+    
+}
+
+.filme-banner .container{
+    width: 70%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.carousel{
+    margin-top:5px;
+}
+
+.nav-link{
+    color: #d1cfcf;
+    margin-left: 20px;
+}
+
+.container{
+    margin: 0;
+    padding: 0;
+}
+
+.nav{
+    padding: 1px;
+    margin-top: 0;
+  
+}
+
+.form-control{
+    background-color: #1C1C1C;
+    border-color: #1C1C1C;
+}
+
+.bg-dark{
+    background-color: #141414;
+}
+
+.fas {
+    padding-right: 13px;
+    
+}
+
+@media screen and (max-width:700px){
+    header .container{
+    display: flex;
+    flex-direction: column;
+    }
+
+    .button{
+        margin-top: 5px;
+        width: 300px;
+    }
+
+}
+
+@media screen and (min-width:1000px){
+    .description{
+        width: 50%;
+    }
+}
